@@ -1,0 +1,10 @@
+<ul>
+  <%@flats.each do |flat| %>
+  <li>
+    <p>Name: <%= link_to flat["name"], flat_path(flat["id"]) %></p>
+    <p>Price: <%= flat["price"] %>
+    <%= flat["priceCurrency"] %>
+    </p>
+  </li>
+  <% end %>
+</ul>
